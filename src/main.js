@@ -1,7 +1,7 @@
 import eruda from "eruda";
 import erudaDOM from "eruda-dom";
 import erudaFeatures from "eruda-features";
-import erudaTouches from "eruda-touches";
+// import erudaTouches from "eruda-touches";
 import erudaTiming from "eruda-timing";
 import erudaBenchmark from "eruda-benchmark";
 import erudaCode from "eruda-code";
@@ -13,10 +13,10 @@ eruda.init();
 
 eruda.add(erudaDOM);
 eruda.add(erudaFeatures);
-eruda.add(erudaTouches);
 eruda.add(erudaTiming);
 eruda.add(erudaBenchmark);
 eruda.add(erudaCode);
 eruda.add(erudaGeolocation);
 eruda.add(erudaOrientation);
 eruda.add(erudaMonitor);
+// eruda.add(erudaTouches);

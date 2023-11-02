@@ -8,6 +8,8 @@ import alias from '@rollup/plugin-alias';
 // 压缩代码
 import terser from '@rollup/plugin-terser';
 
+import postcss from "rollup-plugin-postcss";
+
 export default {
   input: './src/main.js',
   output: {
@@ -22,7 +24,12 @@ export default {
     }),
     babel(),
     resolve(),
+    postcss({
+      extract: false,
+      modules: true,// 支持css module
+      extensions: ['.css'],
+    }),
     commonjs(),
-    terser()
+    terser(),
   ]
 }
